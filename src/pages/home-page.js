@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
 /**
  * Home page, add a button to change the SVOA word like a mini game of the create sentence.
  */
 
-function HomePage() {
-  const [word, setWord] = useState("SVOA");
+function HomePage(props) {
+  const { word, setWord } = props;
+  // console.log(props);
+  // const [word, setWord] = useState("SVOA");
   const wordArr = [
     "SAVO",
     "AVOS",
@@ -29,9 +32,9 @@ function HomePage() {
     "ASOV",
     "SAOV",
   ];
-  const randomWord = wordArr[Math.floor(Math.random() * wordArr.length)];
 
   const wordChange = () => {
+    const randomWord = wordArr[Math.floor(Math.random() * wordArr.length)];
     return setWord(randomWord);
   };
 
@@ -46,7 +49,9 @@ function HomePage() {
       <br />
       <br />
       <br />
-      <button>START</button>
+      <button>
+        <Link to="/play">START</Link>
+      </button>
     </main>
   );
 }
