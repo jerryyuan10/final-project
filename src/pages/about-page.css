@@ -1,0 +1,52 @@
+.svoa-list {
+  list-style: none;
+}
+.svoa-list li::before {
+  content: "🔹";
+  padding-right: 0.5rem;
+}
+
+#introduction {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  background-color: rgb(203, 228, 213);
+  color: rgb(5, 97, 40);
+  border: none;
+  border-radius: 2rem;
+}
+
+#crocodile {
+  padding: 1rem;
+  text-align: center;
+}
+
+.comments {
+  max-width: 300px;
+  padding-left: 3rem;
+}
+
+.comments_row {
+  margin-bottom: 0.75rem;
+}
+
+.comments_lable {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.comments_input {
+  display: block;
+  padding: 0.25rem 0.25rem;
+  background: #e7ebe7;
+  color: rgb(5, 97, 40);
+  border: 1px solid #214e1f;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+}
+
+.comments_submit {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}

@@ -1,37 +1,33 @@
 import React from "react";
-// let sentence = "";
+import "./select-item.css";
+
+/**
+ * Player choose the words.
+ */
+
 function SelectItem(props) {
   const { question, words, onAnswerSelected } = props;
 
   const onAnswerClick = (event) => {
-    const showWords = event.target.innerHTML;
-    onAnswerSelected(showWords);
-
-    // console.log(showWords);
+    const sentence = event.target.innerHTML;
+    onAnswerSelected(sentence);
   };
 
-  //   function addTitle(word) {
-  //     sentence += word;
-  //   }
   return (
-    <div>
-      <p>{question}</p>
+    <div className="select-item">
+      <p className="select-item_question">{question}</p>
 
-      <ul>
+      <ul className="select-item_words">
         {words.map((answer) => {
           return (
-            <li key={answer}>
-              <button onClick={onAnswerClick}>{answer}</button>
+            <li key={answer} className="select-item_words">
+              <button onClick={onAnswerClick} className="select-item_button">
+                {answer}
+              </button>
             </li>
           );
         })}
       </ul>
-
-      {/* <p>Select a Verb:</p>
-      <ul>
-        <li><button OnClick={addTitle("sitting")}> sitting</button></li>
-        <li><button OnClick={addTitle("running")}>running</button></li>
-      </ul> */}
     </div>
   );
 }

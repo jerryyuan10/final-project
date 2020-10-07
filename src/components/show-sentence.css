@@ -1,0 +1,14 @@
+.show-sentence {
+  width: 80%;
+  text-align: left;
+  font-size: 2rem;
+  background-color: rgb(20, 160, 187);
+  color: white;
+  padding: 0.5rem 0.2rem;
+  border-radius: 1rem;
+  margin: 3rem auto;
+}
+
+#show-sentence_words {
+  text-indent: 5rem;
+}

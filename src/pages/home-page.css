@@ -1,0 +1,65 @@
+#h1 {
+  color: rgb(241, 137, 34);
+  text-align: center;
+  font-size: 400%;
+  margin: 6rem auto 0rem auto;
+}
+
+#click-me-button {
+  height: 1.5rem;
+  font-size: 1rem;
+  border-color: whitesmoke;
+  border-radius: 0.5rem;
+  margin-left: 52%;
+  cursor: pointer;
+}
+
+#click-me-button:hover {
+  background: rgb(172, 219, 96);
+  transform: rotate(1deg) scale(1.01);
+}
+
+#click-me-button:active {
+  background: rgb(80, 136, 94);
+  transform: rotate(2deg) scale(1.03);
+}
+
+#click-me-button:focus {
+  border-color: rgb(70, 104, 3);
+}
+
+#start-button-center {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+#start-button {
+  font-size: 400%;
+  height: 5rem;
+  width: 13rem;
+  background-color: rgb(203, 228, 213);
+  color: rgb(5, 97, 40);
+  border-color: whitesmoke;
+  border-radius: 1rem;
+}
+
+#start-button:hover {
+  background: rgb(172, 219, 96);
+  transform: rotate(1deg) scale(1.01);
+}
+
+#start-button:active {
+  background: rgb(80, 136, 94);
+  transform: rotate(2deg) scale(1.03);
+}
+
+#start-button:focus {
+  border-color: rgb(70, 104, 3);
+}
+
+#start-button-center {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}

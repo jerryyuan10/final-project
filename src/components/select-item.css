@@ -1,0 +1,45 @@
+.select-item_question {
+  text-align: left;
+  font-size: 2rem;
+  background-color: rgb(85, 160, 104);
+  color: white;
+  padding: 0.5rem 2rem 0.5rem 1.5rem;
+}
+
+.select-item_words {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem 12rem;
+  grid-template-rows: 5rem;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.select-item_button {
+  width: 100%;
+  height: 100%;
+  padding: 1rem, 3rem;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(203, 228, 213);
+  color: rgb(1, 51, 1);
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  transition: background 0.15s, transform 0.15s, border-color 0.15s;
+}
+
+.select-item_button:hover {
+  background: rgb(241, 137, 34);
+  transform: rotate(1deg) scale(1.01);
+}
+
+.select-item_button:active {
+  background: rgb(80, 136, 94);
+  transform: rotate(2deg) scale(1.03);
+}
+
+.select-item_button:focus {
+  border-color: rgb(70, 104, 3);
+}

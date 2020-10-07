@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: medium;
+}
+
+body {
+  background: url("./images/background-playstation.png");
+  color: rgb(85, 160, 104);
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: "Rubik", sans-serif;
+  /* font-weight: bold; */
+}
+
+a {
+  transition: color 0.15s, background-color 0.15s;
+}
+
+a:link {
+  background-color: transparent;
+  color: rgb(82, 201, 27);
+}
+
+a:visited {
+  background-color: transparent;
+  color: rgb(20, 161, 74);
+}
+
+a:focus {
+  background-color: rgb(20, 161, 74);
+  color: white;
+}
+
+a:hover {
+  background-color: rgb(20, 161, 74);
+  color: white;
+}
+
+a:active {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}

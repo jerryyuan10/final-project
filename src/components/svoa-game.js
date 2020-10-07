@@ -3,17 +3,21 @@ import ShowSentence from "./show-sentence";
 import SelectItem from "./select-item";
 import chooseWords from "../data/choose-words";
 
+/*
+ ** Page of the sova game.
+ */
+
 function SvoaGame() {
   const [selectIndex, setSelectIndex] = useState(0);
-  const [showWords, setShowWords] = useState("");
+  const [sentence, setSentence] = useState("");
 
   const currentSelectWord = chooseWords[selectIndex];
   const { words, question } = currentSelectWord;
 
-  const onAnswerSelected = (showWords) => {
-    console.log(showWords);
+  const onAnswerSelected = (selectedWord) => {
+    // console.log(sentence);
     setSelectIndex(selectIndex + 1);
-    setShowWords(showWords);
+    setSentence(sentence + " " + selectedWord);
   };
 
   return (
@@ -23,7 +27,7 @@ function SvoaGame() {
         words={words}
         onAnswerSelected={onAnswerSelected}
       />
-      <ShowSentence showWords={showWords} setShowWords={setShowWords} />
+      <ShowSentence sentence={sentence} setSentence={setSentence} />
     </div>
   );
 }

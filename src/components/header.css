@@ -1,0 +1,12 @@
+.header {
+  margin: 2rem;
+  text-align: center;
+}
+
+.header__emoji {
+  font-size: 2rem;
+}
+
+.header__nav {
+  font-size: 1.25rem;
+}

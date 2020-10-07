@@ -1,14 +1,18 @@
 import React from "react";
+import "./show-sentence.css";
 
 /**
- * This page is the user's created page that need to combine all the words together.
+ * It will show the created sentence by the player.
  */
 
 function ShowSentence(props) {
-  const { showWords } = props;
+  const { sentence } = props;
   return (
     <main>
-      <p>Here's the sentence: {showWords}.</p>
+      <div className="show-sentence">
+        <p>Here's the sentence:</p>
+        <p id="show-sentence_words">{sentence}.</p>
+      </div>
     </main>
   );
 }
