@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ShowSentence from "./show-sentence";
 import SelectItem from "./select-item";
 import chooseWords from "../data/choose-words";
+import { motion, AnimatePresence } from "framer-motion";
 
 /*
  ** Page of the sova game.
@@ -22,11 +23,24 @@ function SvoaGame() {
 
   return (
     <div>
-      <SelectItem
-        question={question}
-        words={words}
-        onAnswerSelected={onAnswerSelected}
-      />
+      <AnimatePresence exitBeforeEnter={true}>
+        <motion.div
+          key={selectIndex}
+          initial={{ opacity: 0, transition: { ease: "easeOut" } }}
+          animate={{ opacity: 1 }}
+          exit={{
+            opacity: 0,
+            transition: { delay: 0.5, ease: "easeIn" },
+          }}
+          transition={{ duration: 0.25 }}
+        >
+          <SelectItem
+            question={question}
+            words={words}
+            onAnswerSelected={onAnswerSelected}
+          />
+        </motion.div>
+      </AnimatePresence>
       <ShowSentence sentence={sentence} setSentence={setSentence} />
     </div>
   );

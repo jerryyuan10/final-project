@@ -1,5 +1,6 @@
 import React from "react";
 import "./select-item.css";
+import { motion } from "framer-motion";
 
 /**
  * Player choose the words.
@@ -21,9 +22,11 @@ function SelectItem(props) {
         {words.map((answer) => {
           return (
             <li key={answer} className="select-item_words">
-              <button onClick={onAnswerClick} className="select-item_button">
-                {answer}
-              </button>
+              <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                <button onClick={onAnswerClick} className="select-item_button">
+                  {answer}
+                </button>
+              </motion.div>
             </li>
           );
         })}

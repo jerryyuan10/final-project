@@ -23,7 +23,7 @@ function AboutPage() {
       </div>
       <h2>What you will gain from this game:</h2>
       <ul className="svoa-list">
-        <li>Happyness</li>
+        <li>Happiness</li>
         <li>Knowledge</li>
         <li>The basic rules of sentences</li>
       </ul>
